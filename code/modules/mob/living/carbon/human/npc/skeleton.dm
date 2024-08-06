@@ -94,6 +94,7 @@
 		H.STASTR = rand(14,16)
 	H.STASPD = 8
 	H.STACON = 4
+	H.STAPER = 20
 	H.STAEND = 15
 	H.STAINT = 1
 	if(prob(50))
@@ -110,6 +111,7 @@
 	else
 		shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
 	pants = /obj/item/clothing/under/roguetown/chainlegs
+	shoes = /obj/item/clothing/shoes/roguetown/boots/armoriron
 	head = /obj/item/clothing/head/roguetown/helmet/skullcap
 	neck = /obj/item/clothing/neck/roguetown/coif
 	belt = /obj/item/storage/belt/rogue/leather/hand
@@ -121,10 +123,11 @@
 		H.STASTR = rand(15,17)
 	H.STASPD = 11
 	H.STACON = 8
+	H.STAPER = 20
 	H.STAEND = 17
 	H.STAINT = 1
 	if(prob(50))
-		r_hand = /obj/item/rogueweapon/spear
+		r_hand = /obj/item/rogueweapon/mace/cudgel
 	else
 		r_hand = /obj/item/rogueweapon/sword
 		l_hand = /obj/item/rogueweapon/shield/tower
@@ -148,14 +151,15 @@
 		H.STASTR = 20
 	H.STASPD = 10
 	H.STACON = 20
+	H.STAPER = 20
 	H.STAEND = 20
 	H.STAINT = 1
 	if(prob(50))
-		r_hand = /obj/item/rogueweapon/eaglebeak/lucerne
-		l_hand = null
+		r_hand = /obj/item/rogueweapon/mace
+		l_hand = /obj/item/rogueweapon/shield/tower/metal
 	else
-		r_hand = /obj/item/rogueweapon/greatsword/zwei
-		l_hand = null
+		r_hand = /obj/item/rogueweapon/sword/decorated
+		l_hand = /obj/item/rogueweapon/shield/tower/metal
 
 /mob/living/carbon/human/species/skeleton/npc/no_equipment
     skel_outfit = null
